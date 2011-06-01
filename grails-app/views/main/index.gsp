@@ -1,6 +1,6 @@
 <html>
 	<head><title>Main</title></head>
-	<body> welcome to the forum, the date is <%=new Date()%>
+	<body> welcome to the forum, the date is ${date} 
 		<div>
 		Forums:
 		<ul>
