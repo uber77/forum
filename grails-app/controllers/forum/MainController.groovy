@@ -2,5 +2,5 @@ package forum
 
 class MainController {
 
-    def index = { }
+    def index = { render "Main Page"}
 }
