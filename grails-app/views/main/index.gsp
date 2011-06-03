@@ -4,9 +4,12 @@
 		<div>
 		Forums:
 		<ul>
-			<g:set var="forums" value="${['<a href=\'#\'>Groovy</a>', '<a href=\'#\'>Grails</a>']}"/>
-			<g:each in="${forums}">
-				<li>${it}</li>
+			<g:each in="${forums}" var="forum">
+				<li>
+					<g:link controller="viewForum" params='[forumName:"${forum}"]'>
+						${forum}	
+					</g:link>
+				</li>
 			</g:each>
 		</ul>
 		</div>

@@ -6,8 +6,9 @@ class MainController {
     def index = { 
 		//los taglibs se pueden llamar desde aca!
 		def fechaFormateada = g.formatDate(format:"yyyy MM dd", date:new Date())
+		def forums = ["Groovy", "Grails"]
 
-    	[date : fechaFormateada] //se le devuelve a la vista un map para que lo pueda usar
+    	[date:fechaFormateada, forums:forums] //se le devuelve a la vista un map para que lo pueda usar
     
     }
 

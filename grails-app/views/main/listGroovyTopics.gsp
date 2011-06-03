@@ -2,4 +2,9 @@
 
 <body>
 	La caca<br>
-	<g:each 
+	<ul>
+		<g:each in="${topics}" var="topic">
+			<li>${topic}</li>
+		</g:each>
+	</ul>
+	
