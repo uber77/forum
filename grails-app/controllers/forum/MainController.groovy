@@ -7,4 +7,11 @@ class MainController {
     	[date : new Date()] //se le devuelve a la vista un map para que lo pueda usar
     
     }
+
+    def listGroovyTopics = {
+    	def topics = ["How to install Groovy", "Any Groovy books out there", "Good job..."]
+
+	[topics : topics]
+
+    }
 }
